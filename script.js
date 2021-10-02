@@ -1,25 +1,43 @@
+//Funcion para ir hacia la parte superior de la pagina
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
+function cambioAFormacion() {
+  if (document.getElementById("formacion")) {
+    if (document.getElementById("formacion").style.display == "none") {
+      document.getElementById("formacion").style.display = "block";
+      document.getElementById("experiencia").style.display = "none";
+    } else {
+      document.getElementById("formacion").style.display = "none";
+      document.getElementById("experiencia").style.display = "block";
+    }
+  }
+}
 
+function cambioAExperiencia() {
+  if (document.getElementById("experiencia")) {
+    if (document.getElementById("experiencia").style.display == "none") {
+      document.getElementById("experiencia").style.display = "block";
+      document.getElementById("formacion").style.display = "none";
+    } else {
+      document.getElementById("experiencia").style.display = "none";
+      document.getElementById("formacion").style.display = "block";
+    }
+  }
+}
 
 //Boton ir a top
 mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 0px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
+window.onscroll = function () {
+  scrollFunction();
+};
 function scrollFunction() {
-if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+  if (document.body.scrollTop > 0) {
     mybutton.style.display = "block";
-} else {
+  } else {
     mybutton.style.display = "none";
+  }
 }
-}
-
-
-function topFunction() {
-document.body.scrollTop = 0; // For Safari
-document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
-
-
