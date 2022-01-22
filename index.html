@@ -51,7 +51,7 @@
                         </div>
                         <div class="col-md-9">
                             <h4 style="margin-bottom: 5px; color:#55ACEE">Resumen</h4>
-                                <p style="margin-bottom: 20px">Ingeniero  Industrial industrial con visión generalista. Fuerte experiencia en gestion de proyecto de mejora de procesos en conjunto con a transformaciones digitales </p>
+                                <p style="margin-bottom: 20px">Ingeniero  Industrial industrial con visión generalista. Fuerte experiencia en gestion de proyectos de mejora de procesos en conjunto con a transformaciones digitales </p>
                             <h4 style="margin-top: 10px; margin-bottom: 5px; color:#55ACEE">Datos de contacto</h4>
                             <address>
                                 <strong>Dirección: </strong>
@@ -97,6 +97,45 @@
                                 </span>
                             </div>
                             <button onclick="topFunction()" id="myBtn" title="Ir Arriba">▲</button>
+                            <script>
+                                mybutton = document.getElementById("myBtn");
+
+                                window.onscroll = function () {
+                                debounceScroll();
+                                };
+
+                                function scrollFunction() {
+                                    if (document.documentElement.scrollTop > 0) {
+                                        mybutton.style.display = "block";
+                                    } else {
+                                        mybutton.style.display = "none";
+                                    }
+                                }
+                                let idTimeout = undefined
+                                function debounceScroll(){
+                                
+                                    if (idTimeout) {
+                                        clearTimeout(idTimeout)
+                                        console.log("Se borro")
+                                    }
+                                    idTimeout = setTimeout(() => {
+                                        scrollFunction()
+                                        console.log("Scroll", document.documentElement.scrollTop)
+                                    }, 2000)
+                                }
+
+                                scrollFunction()
+
+
+                                let counter = 0
+                                function hola() {
+                                    counter = counter + 1
+                                    const localCounter = counter
+                                    setTimeout(() => {
+                                        console.log(localCounter)
+                                    }, 1000)
+                                }
+                            </script>
                             <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
                                 <ul class="timeline timeline-split">
                                     <li class="timeline-item">
@@ -108,14 +147,16 @@
                                         <div class="timeline-content">
                                             <h3 class="timeline-title">Silice | Software Factory </h3>
                                             <a href="https://silice.biz/" target="_blank">https://silice.biz/</a>
-                                            <p>Consultoria en procesos para desarrollo del sistema de gestión
-                                                SGR Cuyo Aval</p>
-                                                <p>- Relevamiento de procesos</p>
-                                                <p>- Optimización de procesos</p>
-                                                <p>- Relevamiento de requisitos del sistema</p>
-                                            <p>- Diagramas de relaciones</p>
-                                            <p>- Maquetacion de pantallas</p>
-                                            
+                                            <p>Consultoria en procesos orientado a relevar requerimientos de desarrollo.</p>
+                                                <p>Relevamiento y Optimización de procesos, Diagramas de relaciones, Maquetacion de pantallas</p>   
+                                                <p>Algunos proyectos:</p>
+                                                <ul>
+                                                <li>CuyoAval: Desarrollo sistema de gestión</li>
+                                                <li>Repuestos Pesados: Implementación SAP Business One</li>
+                                                <li>Clement: Relevamiento de procesos para actualizacion tecnológica de procesos mediante Microsoft 365</li>
+                                                <li>Bodega Piattelli: Implementación SAP Business One</li>
+                                                </ul>
+
                                         </div>
                                     </li>
                                     <li class="timeline-item">
@@ -150,9 +191,11 @@
                                                 puntos de venta ubicados en la provincia de Mendoza – Argentina.
                                             </p>
                                             <p>Principales responsabilidades: </p>
-                                            <p> - Asegurar y mantener un funcionamiento fluido de la empresa</p>
-                                            <p> - Implementar la gestión por procesos</p>
-                                            <p> - Rediseñar y optimizar la cadena de suministros </p>
+                                            <ul>
+                                            <li>Asegurar y mantener un funcionamiento fluido de la empresa</li>
+                                            <li>Implementar la gestión por procesos</li>
+                                            <li>Rediseñar y optimizar la cadena de suministros</li>
+                                            </ul>
                                         </div>
                                     </li>
                                     <!-- Trabajo No3-->
@@ -166,20 +209,15 @@
                                             <h3 class="timeline-title">Go Bar</h3>
                                             <a href="https://www.gobar.com.ar/" target="_blank">https://www.gobar.com.ar/</a>
                                             <p> Encargado de coordinar y garantizar la operación de distribución
-                                                a los
-                                                clientes de los distintos canales de comercialización (locales
-                                                propios,
-                                                franquiciados, circuitos de preventa, E-Commerce).</p>
+                                                a los clientes de los distintos canales de comercialización (locales
+                                                propios,franquiciados, circuitos de preventa, E-Commerce).
                                                 <p> Principales responsabilidades:</p>
-                                            <p> - Asegurar y organizar los inventarios para maximizar el nivel
-                                                de servicio.</p>
-                                            <p> - Optimizar costos relacionados con la operación.</p>
-                                            <p> - Desarrollar e implementar prácticas de mejora y procedimientos
-                                                para
-                                                optimizar la gestión del área.</p>
-                                                <p> - Organizar y desarrollar el equipo de trabajo a cargo
-                                                impulsando la
-                                                mejora en la performance de los indicadores.</p>
+                                                <ul>
+                                                <li>Asegurar y organizar los inventarios para maximizar el nivel de servicio.</li>
+                                                <li>Optimizar costos relacionados con la operación.</li>
+                                                <li>Desarrollar e implementar prácticas de mejora y procedimientos para optimizar la gestión del área.</li>
+                                                <li>Organizar y desarrollar el equipo de trabajo a cargo impulsando la mejora en la performance de los indicadores.</li>
+                                            </ul>
                                         </div>
                                     </li>
                                     <!--Trabajo No4-->
@@ -198,19 +236,15 @@
                                             
                                             <p> Consultoría y gestión de proyectos de mejora continua.
                                                 <p> Principales proyectos dirigidos:</p>
-                                                <p> - Dirección y Expedición de proyectos del Programa
-                                                    Excelencia
-                                                    Empresarial (Verallia Argentina)</p>
-                                                    <p> - Coordinación de proyectos TPM MA (Verallia Argentina)</p>
-                                                    <p> - Diagnóstico Procesos de Producción (Globe –Ultracore)</p>
-                                                    <p> - Proyecto de expansión de nuevos consultorios (Clínica de
-                                                        Cuyo)</p>
-                                                        <p> - Desarrollo de herramientas de gestión de información
-                                                    (Tablero de
-                                                    Control)</p>
-                                                    <p> - Generación de Aplicaciones de Business Intelligence
-                                                        (QlikView, Pentaho)</p>
-                                                        <p> - Implementación de Sistema de Calidad (Aceros Himan) </p>
+                                                <ul>
+                                                    <li>Dirección y Expedición de proyectos del Programa Excelencia Empresarial (Verallia Argentina)</li>
+                                                    <li>Coordinación de proyectos TPM MA (Verallia Argentina)</li>
+                                                    <li>Diagnóstico Procesos de Producción (Globe – Ultracore)</li>
+                                                    <li>Proyecto de expansión de nuevos consultorios (Clínica de Cuyo)</li>
+                                                    <li>Desarrollo de herramientas de gestión de información (Tablero de Control)</li>
+                                                    <li>Generación de Aplicaciones de Business Intelligence(QlikView, PowerBi)</li>
+                                                    <li>Implementación de Sistema de Calidad (Aceros Himan) </li>
+                                                </ul>
                                                         <img class="logo_chico" src="img/veralia.jpg" alt="Logo Verallia">
                                                         <img class="logo_chico" src="img/globe.jpg" alt="Logo Globe">
                                                         <img class="logo_chico" src="img/ramondin.jpg" alt="Logo Ramondin">
@@ -228,24 +262,28 @@
                                                         <a href="https://www.flowserve.com/" target="_blank">https://flowserve.com/</a>
                                                         <p>Encargado de dirigir el equipo de proyecto en la planificación, ejecución, control y cierre de contratos de equipos nuevos. <br>
                                                             <p> Responsabilidades:</p>
-                                                <p> - Actuar como único punto de contacto del cliente para órdenes asignadas.</p>
-                                                <p> - Responsable por la ejecución de  proyectos para establecer y monitorear cronogramas, variaciones de costos y riesgos asociados.</p>
-                                                <p> - Aseguramiento del cumplimiento en tiempo y forma de hitos financieros.</p>
-                                                <p> - Comunicar a tiempo, y en forma clara y profesional a todos los niveles organizacionales tanto internamente como con clientes.</p>
-                                                <p> - Manejo diario de múltiple proyectos.</p>
-                                                <p> - Asegurar el entendimiento y cumplimiento de las especificaciones del proyecto.</p>
-                                                <p> - Manejo del status de documentación asociada al proyecto.</p>
-                                                <p> - Coordinación de áreas funcionales para la resolución de issues internos / externos.</p>
-                                                <p> - Presentación formal de informes de avance de proyectos.</p>
-                                                <p> - Desarrollo de planes de contingencias de acuerdo a necesidades.</p>
-                                                <p> - Responsable del manejo de garantías e issues de campo.</p>
-                                                <br>   
-                                                <p>Gestión del portafolio de proyectos de acuerdo a procesos y metodologías PMI. </p>
-                                                <p>Portafolio promedio de proyectos por un valor de USD 20M. </p>
-                                                <br>
-                                                <strong>Capacitaciones:</strong>
-                                                <p> - PMP Training Ago-Nov 2012</p>
-                                                <p> - MS-Project Server Sep 2011</p>
+                                                            <ul>
+                                                                <li>Actuar como único punto de contacto del cliente para órdenes asignadas.</li>
+                                                                <li>Responsable por la ejecución de  proyectos para establecer y monitorear cronogramas, variaciones de costos y riesgos asociados.</li>
+                                                                <li>Aseguramiento del cumplimiento en tiempo y forma de hitos financieros.</li>
+                                                                <li>Comunicar a tiempo, y en forma clara y profesional a todos los niveles organizacionales tanto internamente como con clientes.</li>
+                                                                <li>Manejo diario de múltiple proyectos.</li>
+                                                                <li>Asegurar el entendimiento y cumplimiento de las especificaciones del proyecto.</li>
+                                                                <li>Manejo del status de documentación asociada al proyecto.</li>
+                                                                <li>Coordinación de áreas funcionales para la resolución de issues internos / externos.</li>
+                                                                <li>Presentación formal de informes de avance de proyectos.</li>
+                                                                <li>Desarrollo de planes de contingencias de acuerdo a necesidades.</li>
+                                                                <li>Responsable del manejo de garantías e issues de campo.</li>
+                                                                <br>   
+                                                                <li>Gestión del portafolio de proyectos de acuerdo a procesos y metodologías PMI. </li>
+                                                                <li>Portafolio promedio de proyectos por un valor de USD 20M. </li>
+                                                                <br>
+                                                            </ul>
+                                                            <p>Capacitaciones:</p>
+                                                                <ul>
+                                                                    <li>PMP Training Ago-Nov 2012</li>
+                                                                    <li>MS-Project Server Sep 2011</li>
+                                                                </ul>
                                             </div>
                                             <li class="timeline-item">
                                                 <div class="timeline-info">
@@ -260,15 +298,17 @@
                                                 <br>
                                                 <p> Otras Tareas realizadas: Gestión de adquisición de órdenes, Análisis de evolución de costos, Análisis de resultados, Gestión de precios con proveedores, Preparación de reportes para Gerencia General.</p>
                                                 <br>
-                                                <strong> Capacitaciones: </strong>
-                                                    <p> - Capacitación para mandos medios: “Autoconocimiento para el desarrollo”  May 2011 (8 hs)</p>
-                                                    <p> - Capacitación para mandos medios: “Toma de decisiones y Resolución de Problemas”  Dic 2010 (8 hs)</p>
-                                                    <p> - Capacitación para mandos medios: “Gestión de Cambios Orientado a resultados”  Dic 2010 (16 hs)</p>
-                                                    <p> - Six Sigma Green Belt Training  2010 (80 horas)</p>
-                                                    <p> - Pros+ Full User Training 2009 – Etten Leur, Holanda</p>
-                                                    <p> - Advance procurement  2008 (8 horas)</p>
-                                                    <p> - Revenue recognition/International commercial terms 2008 (8 horas)</p>
-                                                    <p> - Project Management Workshop 2008 (32 horas)</p>
+                                                <p>Capacitaciones: </p>
+                                                    <ul>
+                                                        <li>Capacitación para mandos medios: “Autoconocimiento para el desarrollo”  May 2011 (8 hs)</p>
+                                                        <li>Capacitación para mandos medios: “Toma de decisiones y Resolución de Problemas”  Dic 2010 (8 hs)</p>
+                                                        <li>Capacitación para mandos medios: “Gestión de Cambios Orientado a resultados”  Dic 2010 (16 hs)</p>
+                                                        <li>Six Sigma Green Belt Training  2010 (80 horas)</p>
+                                                        <li>Pros+ Full User Training 2009 – Etten Leur, Holanda</p>
+                                                        <li>Advance procurement  2008 (8 horas)</p>
+                                                        <li>Revenue recognition/International commercial terms 2008 (8 horas)</p>
+                                                        <li>Project Management Workshop 2008 (32 horas)</p>
+                                                    </ul>    
                                                 </div>
                                     </li>
                                     <li class="timeline-item">
@@ -284,10 +324,12 @@
                                             <p>Programa Jóvenes Profesionales 2008</p>
                                             <p>El programa incluyó 4 meses de rotación por las distintas locaciones y áreas funcionales de la empresa, con el objetivo de adquirir una visión integral del proceso y además conocer las particularidades de cada mercado.</p>
                                             <br>    
-                                            <strong>Tareas realizadas:</strong>
-                                                <p> - Desarrollo de proyecto para la mejora del share de inventario expuesto en puntos de venta. </p>
-                                                <p> - Análisis de indicadores de mercado. </p>
-                                                <p> - Participación en la confección del Business Plan Cuyo 2008. </p>
+                                            <strong>Responsabilidades:</strong>
+                                                <ul>
+                                                    <li>Desarrollo de proyecto para la mejora del share de inventario expuesto en puntos de venta. </li>
+                                                    <li>Análisis de indicadores de mercado. </li>
+                                                    <li>Participación en la confección del Business Plan Cuyo 2008. </li>
+                                                </ul>
                                         </div>
                                     </li>
                                 </ul>
@@ -312,69 +354,61 @@
                                             <div class="timeline-content">
                                                 <h3 class="timeline-title">Diplomado Marketing y Ventas</h3>
                                                 <p><strong>Universidad Adolfo Ibañez - Chile</strong></p>
-                                                <a href="https://silice.biz/" target="_blank">https://silice.biz/</a>
-                                                <p>- sflñkjsflksajflñsakj</p>
-                                            </div>
                                         </li>
                                         
                                         <li class="timeline-item">
                                             <div class="timeline-info">
-                                                <span>Marzo - Agosto 2015</span>
+                                                <span>Marzo - Agosto 2010</span>
                                             </div>
                                             <div class="timeline-marker"></div>
                                             <div class="timeline-content">
                                                 <h3 class="timeline-title">Programa de Especialización en Finanzas</h3>
-                                                <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a,
-                                                    consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam
-                                                    ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero
-                                                    venenatis faucibus. ullam dictum felis
-                                                    eu pede mollis pretium. Pellentesque ut neque. </p>
+                                                <p><strong>Mass Negocios Business School</strong></p>
                                             </div>
                                         </li>
                                         <li class="timeline-item">
                                             <div class="timeline-info">
-                                                <span>April 28, 2012</span>
+                                                <span>Agosto - Noviembre 2012</span>
                                             </div>
                                             <div class="timeline-marker"></div>
                                             <div class="timeline-content">
                                                 <h3 class="timeline-title">PMI PMP Training</h3>
-                                                <p> </p>
+                                                <p><strong>Pablo Lledó PMP</strong></p>
                                             </div>
                                         </li>
                                         <li class="timeline-item">
                                             <div class="timeline-info">
-                                                <span>April 02, 2009</span>
+                                                <span>Junio - Septiembre 2010</span>
+                                            </div>
+                                            <div class="timeline-marker"></div>
+                                            <div class="timeline-content">
+                                                <h3 class="timeline-title">Lean Six Sigma Green Belt Training  2010</h3>
+                                                <p><strong>Flowserve</strong></p>                                               
+                                            </div>
+                                        </li>
+                                        <li class="timeline-item">
+                                            <div class="timeline-info">
+                                                <span>Marzo - Septiembre 2009</span>
                                             </div>
                                             <div class="timeline-marker"></div>
                                             <div class="timeline-content">
                                                 <h3 class="timeline-title">Diplomado en Dirección y Administración de Proyectos</h3>
-                                                <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a,
-                                                    consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam
-                                                    ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero
-                                                    venenatis faucibus. ullam dictum felis
-                                                    eu pede mollis pretium. Pellentesque ut neque. </p>
+                                                <p><strong>Universidad Nacional de Cuyo</strong></p>                                               
                                             </div>
                                         </li>
                                         <li class="timeline-item">
                                             <div class="timeline-info">
-                                                <span>April 28, 2016</span>
+                                                <span>Marzo 2001 - Marzo 2007</span>
                                             </div>
                                             <div class="timeline-marker"></div>
                                             <div class="timeline-content">
                                                 <h3 class="timeline-title">Ingeniería Industrial</h3>
-                                                <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a,
-                                                    consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam
-                                                    ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero
-                                                    venenatis faucibus. ullam dictum felis
-                                                    eu pede mollis pretium. Pellentesque ut neque.
-                                                </p>
+                                                <p><strong>Universidad Nacional de Cuyo</strong></p>
                                             </div>
                                         </li>
                                     </ul>
                             </div>
-                            </div>
-                            </div>    
-                        </div>    
+                        </div> 
                     </div>
                 </div>
             </div>
