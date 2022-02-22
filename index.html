@@ -111,30 +111,20 @@
                                         mybutton.style.display = "none";
                                     }
                                 }
+
                                 let idTimeout = undefined
+
                                 function debounceScroll(){
-                                
                                     if (idTimeout) {
                                         clearTimeout(idTimeout)
-                                        console.log("Se borro")
                                     }
                                     idTimeout = setTimeout(() => {
                                         scrollFunction()
-                                        console.log("Scroll", document.documentElement.scrollTop)
+                                        //console.log("Scroll", document.documentElement.scrollTop)
                                     }, 2000)
                                 }
 
                                 scrollFunction()
-
-
-                                let counter = 0
-                                function hola() {
-                                    counter = counter + 1
-                                    const localCounter = counter
-                                    setTimeout(() => {
-                                        console.log(localCounter)
-                                    }, 1000)
-                                }
                             </script>
                             <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
                                 <ul class="timeline timeline-split">
@@ -207,6 +197,9 @@
                                         <div class="timeline-marker"></div>
                                         <div class="timeline-content">
                                             <h3 class="timeline-title">Go Bar</h3>
+                                            <div id="titulo">
+                                                <h5 id="titulo">Gerente de Operaciones</h5>
+                                            </div>
                                             <a href="https://www.gobar.com.ar/" target="_blank">https://www.gobar.com.ar/</a>
                                             <p> Encargado de coordinar y garantizar la operación de distribución
                                                 a los clientes de los distintos canales de comercialización (locales
