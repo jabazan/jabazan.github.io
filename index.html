@@ -22,13 +22,13 @@
             });           
         </script>
         <script src="https://use.typekit.net/bkt6ydm.js"></script>
-        <!-- <script>
+        <script>
             try {
             Typekit.load({
             async: true
             });
             } catch (e) {}
-        </script>-->
+        </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"
         integrity="sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw=="
         crossorigin="anonymous">
@@ -89,10 +89,11 @@
             <div id="ColDer" class="right-col-block blocks">
                 <div class="container-fluid">
                     <div class="row example-split">
-                        <div id="experiencia"class="col-md-12 example-title" style="display:block">
+                        <div id="experiencia" class="col-md-12 example-title" style="display:block">
                             <h2 style="text-align: center; margin-bottom:10px;">Experiencia Laboral</h2>
                             <div style="text-align:center; margin-bottom:30px;">
                                 <span style="font-size: large;">
+                                    <span style="font-size: smaller;">Formación</span>
                                     <i class="fas fa-arrow-right" onclick="cambioAFormacion()"></i>
                                 </span>
                             </div>
@@ -112,51 +113,61 @@
                                     }
                                 }
 
-                                let idTimeout = undefined
+                                let idTimeout = undefined;
 
                                 function debounceScroll(){
                                     if (idTimeout) {
-                                        clearTimeout(idTimeout)
+                                        clearTimeout(idTimeout);
                                     }
                                     idTimeout = setTimeout(() => {
-                                        scrollFunction()
+                                        scrollFunction();
                                         //console.log("Scroll", document.documentElement.scrollTop)
-                                    }, 1000)
+                                    }, 2000);
                                 }
-
                                 scrollFunction()
                             </script>
                             <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
                                 <ul class="timeline timeline-split">
                                     <li class="timeline-item">
                                         <div class="timeline-info">
+                                            <span>Julio, 2022 - Actualidad</span><br>
+                                            <img class="logo" src="img/origami.png" alt="Logo Origami">
+                                        </div>
+                                        <div class="timeline-marker"></div>
+                                        <div class="timeline-content">
+                                            <h3 class="timeline-title">Origami - Soft</h3>
+                                            <a href="https://www.origami-soft.com/en/" target="_blank">https://www.origami-soft.com/en/</a>
+                                            <p>rabajando principalmente en 2 objetivos estratégicos de la empresa</p>
+                                            <ul>
+                                            <li>Dirigiendo proyectos internos de mejora focalizados en la metodología de trabajo.</li>
+                                            <li>Dando soporte en implementaciones de Odoo.</li>
+                                            </ul>
+                                        </div>
+                                    <li class="timeline-item">
+                                        <div class="timeline-info">
                                             <span>Diciembre, 2019 - Actualidad</span><br>
-                                            <img class="logo" src="img/Silice.png" alt="Logo Silice">
+                                            <span><img class="logo" src="img/Silice.png" alt="Logo Silice"></span>
                                         </div>
                                         <div class="timeline-marker"></div>
                                         <div class="timeline-content">
                                             <h3 class="timeline-title">Silice | Software Factory </h3>
                                             <a href="https://silice.biz/" target="_blank">https://silice.biz/</a>
                                             <p>Consultoria en procesos orientado a relevar requerimientos de desarrollo.</p>
-                                                <p>Relevamiento y Optimización de procesos, Diagramas de relaciones, Maquetacion de pantallas</p>   
-                                                <p>Algunos proyectos:</p>
-                                                <ul>
-                                                <li>CuyoAval: Desarrollo sistema de gestión</li>
-                                                <li>Repuestos Pesados: Implementación SAP Business One</li>
-                                                <li>Clement: Relevamiento de procesos para actualizacion tecnológica de procesos mediante Microsoft 365</li>
-                                                <li>Bodega Piattelli: Implementación SAP Business One</li>
-                                                </ul>
-
-                                        </div>
-                                    </li>
+                                            <p>Relevamiento y Optimización de procesos, Diagramas de relaciones, Maquetacion de pantallas</p>   
+                                            <p>Algunos proyectos:</p>
+                                            <ul>
+                                            <li>CuyoAval: Desarrollo sistema de gestión</li>
+                                            <li>Repuestos Pesados: Implementación SAP Business One</li>
+                                            <li>Clement: Relevamiento de procesos para actualizacion tecnológica de procesos mediante Microsoft 365</li>
+                                            <li>Bodega Piattelli: Implementación SAP Business One</li>
+                                            </ul>
                                     <li class="timeline-item">
                                         <div class="timeline-info">
-                                            <span>Diciembre, 2019 - Actualidad</span><br>
+                                            <span>Diciembre, 2019 - Julio, 2022</span><br>
                                         </div>
                                         <div class="timeline-marker"></div>
                                         <div class="timeline-content">
                                             <h3 class="timeline-title">Consultor Independiente</h3>
-                                            <!--<a href="https://silice.biz/" target="_blank">https://silice.biz/</a>-->
                                             <p>Acompañamiento y capacitación en diagnóstico, relevamiento y optimización de procesos. Identificación de oportunidades de mejora y ejecución de proyectos de mejora continua.</p>
                                             
                                             <p>Especialidades: Lean Manufacturing, Optimización Procesos, Project Management.</p>
@@ -333,12 +344,34 @@
                             <h2 style="text-align: center; margin-bottom:10px;">Formación Académica </h2>   
                             <span style="font-size: large;">                        
                                 <i class="fas fa-arrow-left"onclick="cambioAExperiencia()"></i>
+                                <span style="font-size: smaller;">Experiencia</span>
                             </span>
                             <div style="text-align:center; margin-bottom:30px;"></div>
                             <button onclick="topFunction()" id="myBtn" title="Ir Arriba">▲</button>
                             <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
                                     <ul class="timeline timeline-split">
+                                        <li class="timeline-item">
+                                            <div class="timeline-info">
+                                                <span>Octubre 2023 - A la actualidad</span>
+                                            </div>
+                                            <div class="timeline-marker"></div>
+                                            <div class="timeline-content">
+                                                <h3 class="timeline-title">Diplomado DevOps</h3>
+                                                <p><strong>Universidad Nacional de Córdoba - MundosE</strong></p>
+                                        </li>
+
                                         
+                                        <li class="timeline-item">
+                                            <div class="timeline-info">
+                                                <span>Marzo 2023</span><br>
+                                                <img class="logo"src="img/certificado_scrum.png" alt="Cert_Scrum">
+                                            </div>
+                                            <div class="timeline-marker"></div>
+                                            <div class="timeline-content">
+                                                <h3 class="timeline-title">Scrum Grand Master</h3>
+                                                <p><strong>UTN.BA - Centro de eLearning</strong></p>
+                                        </li>
+
                                         <li class="timeline-item">
                                             <div class="timeline-info">
                                                 <span>Marzo - Diciembre 2016</span>
